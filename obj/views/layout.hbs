@@ -1,10 +1,143 @@
 <!DOCTYPE html>
 <html>
-  <head>
+<head>
     <title>{{title}}</title>
     <link rel='stylesheet' href='/stylesheets/style.css' />
-  </head>
-  <body>
-    {{{body}}}
-  </body>
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script language="javascript">
+        $(document).ready(function() {
+            $("#menu2 li a").wrapInner( '<span class="out"></span>' );
+            $("#menu2 li a").each(function() {
+                $( '<span class="over">' +  $(this).text() + '</span>' ).appendTo( this );
+            });
+            $("#menu2 li a").hover(function() {
+                $(".out",	this).stop().animate({'top':	'50px'},	300); // move down - hide
+                $(".over",	this).stop().animate({'top':	'0px'},		300); // move down - show
+            }, function() {
+                $(".out",	this).stop().animate({'top':	'0px'},		300); // move up - show
+                $(".over",	this).stop().animate({'top':	'-50px'},	300); // move up - hide
+            });
+        });
+    </script>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            padding:0;
+        }
+        header{
+            width: 100%;
+            height: 300px;
+            position: relative;
+        }
+        #img{
+            width: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+        .menu {
+            height: 50px;
+            display: block;
+            width: 1080px;
+            position: absolute;
+            top: 225px;
+            left: 420px;
+        }
+        .menu3{
+            height: 10px;
+            width: 1080px;
+            position: absolute;
+            top: 275px;
+            left: 420px;
+        }
+
+        ul{
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .menu ul li {
+            float: left;
+            overflow: hidden;
+            position: relative;
+            line-height: 50px;
+            text-align: center;
+        }
+        .menu3 ul li{
+            float: left;
+            width: 135px;
+            height: 10px;
+            line-height: 10px;
+            text-align: center;
+            color: white;
+            font-size: 12px;
+            font-family: "Microsoft yahei" !important;
+        }
+        .menu ul li a {
+            position: relative;
+            display: block;
+            width: 135px;
+            height: 50px;
+            font-weight: bold;
+            color: white;
+            font-family: "Microsoft yahei" !important;
+            font-size: 18px;
+            text-decoration: none;
+            cursor: pointer;
+        }
+        .menu ul li a span {
+            position: absolute;
+            left: 0;
+            width: 135px;
+        }
+        .menu ul li a span.over,
+        .menu ul li a span.bg {
+            top: -50px;
+        }
+        #menu2 ul li a span.over {
+            color: #000;
+            background-color: #FABD00;
+        }
+
+
+    </style>
+</head>
+<body>
+<header>
+    <img src="images/i_38.jpg" id="img">
+    <div id="menu2" class="menu">
+        <ul>
+            <li><a href="found" style="background-color: #EA960F;color: #ffffff;">启封</a></li>
+            <li><a href="#" style="background-color: #1175B1;">发现</a></li>
+            <li><a href="#" style="background-color: #E07348;">怀古</a></li>
+            <li><a href="#" style="background-color: #EA960F;">买醉</a></li>
+            <li><a href="#" style="background-color: #E4CA04;">探秘</a></li>
+            <li><a href="#" style="background-color: #D31078;">聆听</a></li>
+            <li><a href="#" style="background-color: #E07348;">分享</a></li>
+            <li><a href="#" style="background-color: #7FB700;">万小安</a></li>
+        </ul>
+        <div class="cls"></div>
+    </div>
+    <div id="menu3" class="menu3">
+        <ul>
+            <li style="background-color: #FFAF04;">ABOUT</li>
+            <li style="background-color: #008FD3;">FOUND</li>
+            <li style="background-color: #FF7E3C;">MEMORY</li>
+            <li style="background-color: #FFAF04;">DRUNK</li>
+            <li style="background-color: #F3DD00;">EXPLORE</li>
+            <li style="background-color: #EF018D;">LISTEN</li>
+            <li style="background-color: #FFAF04;">ENJOY</li>
+            <li style="background-color: #95CA00;">ERVICE</li>
+        </ul>
+    </div>
+</header>
+{{{body}}}
+<footer>
+    <p>啦啦啦</p>
+</footer>
+</body>
 </html>

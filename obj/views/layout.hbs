@@ -3,7 +3,7 @@
 <head>
     <title>{{title}}</title>
     <link rel='stylesheet' href='/stylesheets/style.css' />
-    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="javascripts/jquery.min.js"></script>
     <script language="javascript">
         $(document).ready(function() {
             $("#menu2 li a").wrapInner( '<span class="out"></span>' );
@@ -24,34 +24,29 @@
             margin: 0;
             padding: 0;
         }
-        body{
-            padding:0;
-        }
         header{
-            width: 100%;
-            height: 300px;
             position: relative;
-        }
-        #img{
+            height: 300px;
             width: 100%;
+            overflow: hidden;
+        }
+        header img{
+            display: block;
+            width: 2020px;
+            height: 300px;
             position: absolute;
-            top: 0;
-            left: 0;
+            left: 50%;
+            transform: translatex(-50%);
         }
         .menu {
             height: 50px;
             display: block;
             width: 1080px;
-            position: absolute;
-            top: 225px;
-            left: 420px;
         }
         .menu3{
             height: 10px;
             width: 1080px;
-            position: absolute;
-            top: 275px;
-            left: 420px;
+
         }
 
         ul{
@@ -108,17 +103,17 @@
 </head>
 <body>
 <header>
-    <img src="images/i_38.jpg" id="img">
+    <img src="images/i_38.jpg" alt="" class="headerimg">
     <div id="menu2" class="menu">
         <ul>
-            <li><a href="found" style="background-color: #EA960F;color: #ffffff;">启封</a></li>
-            <li><a href="#" style="background-color: #1175B1;">发现</a></li>
-            <li><a href="#" style="background-color: #E07348;">怀古</a></li>
-            <li><a href="#" style="background-color: #EA960F;">买醉</a></li>
-            <li><a href="#" style="background-color: #E4CA04;">探秘</a></li>
-            <li><a href="#" style="background-color: #D31078;">聆听</a></li>
-            <li><a href="#" style="background-color: #E07348;">分享</a></li>
-            <li><a href="#" style="background-color: #7FB700;">万小安</a></li>
+            <li><a href="" style="background-color: #EA960F;color: #ffffff;">启封</a></li>
+            <li><a href="FOUNT" style="background-color: #1175B1;">发现</a></li>
+            <li><a href="MEMORY" style="background-color: #E07348;">怀古</a></li>
+            <li><a href="DRUNK" style="background-color: #EA960F;">买醉</a></li>
+            <li><a href="EXPLORE" style="background-color: #E4CA04;">探秘</a></li>
+            <li><a href="LISTEN" style="background-color: #D31078;">聆听</a></li>
+            <li><a href="ENJOY" style="background-color: #E07348;">分享</a></li>
+            <li><a href="ERVICE" style="background-color: #7FB700;">万小安</a></li>
         </ul>
         <div class="cls"></div>
     </div>
@@ -135,7 +130,7 @@
         </ul>
     </div>
 </header>
-{{{body}}}
+    {{{body}}}
 <footer>
     <p>啦啦啦</p>
 </footer>

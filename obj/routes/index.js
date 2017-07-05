@@ -5,14 +5,23 @@ var router = express.Router();
 router.get('/', function(req, res, next) {
     res.render('index', { title: 'Express' });
 });
-
+//重定向函数封装
+function redirecty(yemian,yemianx) {
 router.get('/redirect', function(req, res, next) {
-    res.redirect('/found');
+    res.redirect(yemian);
 });
-
-
-router.get('/found',function (req,res,next){
-    res.render('found',{message:req.query.message});
+router.get(yemian,function (req,res,next){
+     res.render(yemianx,{message:req.query.message});
 });
+}
+//每个分页都需要重定向 调用
+//主页 孙玉杰写的没有重定向
+redirecty('/FOUNT','FOUNT');
+redirecty('/MEMORY','MEMORY');
+redirecty('/DRUNk','DRUNK');
+redirecty('/EXPLORE','EXPLORE');
+redirecty('/LISTEN','LISTEN');
+redirecty('/ENJOY','ENJOY');
+redirecty('/ERVICE','ERVICE');
 
 module.exports = router;

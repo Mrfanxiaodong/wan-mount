@@ -1,8 +1,9 @@
-<!doctype html>
-<html lang="en">
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-    <title>万安山山顶公园</title>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>万安山大峡谷|山顶公园</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta name="keywords" content="万安山|万安山山顶公园|万安山景区|万安山大峡谷|七彩大峡谷">
     <meta name="description" content="万安山山顶公园将历史文化、山体景观与生态绿化相结合，打造了一个兼具文化、养生、休闲、度假等多种功能为一体的综合性公园，为市民提供了一个休闲娱乐的好去处。">
     <link href="http://www.lywas.cn/favicon.ico" rel="shortcut icon"  />
@@ -14,7 +15,6 @@
     <link rel="stylesheet" href="stylesheets/news_list_tab.css"/>
     <link rel="stylesheet" href="stylesheets/gonggao.css"/>
     <link rel="stylesheet" href="stylesheets/top_nav.css">
-    <link rel="stylesheet" href="stylesheets/rollipic.css">
     <script type="text/javascript" src="javascripts/news_list_tab.js"></script>
     <script type="text/javascript" src="javascripts/jquery.min.js"></script>
     <script type="text/javascript" src="javascripts/jquery-1.8.3.min.js"></script>
@@ -38,13 +38,13 @@
 <body>
 <div class="toubu">
     <div class="logo2"><a href="http://www.lywas.cn"><img src="images/logo2.png" /></a></div>
-    <div class="call"><img src="images/call.png" /></div>
+    <div class="call"><img src="http://www.lywas.cn/skin/img/call.png" /></div>
 </div>
 <!--- header begin --->
 <div id="header_box">
-    <!---<a class="xiazai" href="http://www.lywas.cn/app.apk" target="_blank"><span class="ewm"></span></a>--->
-    <a class="yuyue" href="http://m.lywas.cn/yuyueweb" target="_blank"></a>
-    <!---<div id="top_logo"></div>--->
+
+    <!--预约-->
+    <a class="yuyue" href="" target="_blank"></a>
     <div id="header_index_top_bg"></div>
     <div class="clear"></div>
     <div id="index_banner" >
@@ -53,8 +53,7 @@
     <div id="header_nav">
         <div id="nav_menu" class="menu">
             <ul>
-
-                <li style="background-color:#ea960f;"><a href="ABOUT">启封</a></li>
+                <li style="background-color:#ea960f;"><a href="ABOUT.html">启封</a></li>
                 <li style="background-color:#1175b1;"><a href="FOUND">发现</a></li>
                 <li style="background-color:#e07348;"><a href="MEMORY">怀古</a></li>
                 <li style="background-color:#ea960f;"><a href="DRUNK">买醉</a></li>
@@ -62,16 +61,6 @@
                 <li style="background-color:#d31078;"><a href="LISTEN">聆听</a></li>
                 <li style="background-color:#e07348;"><a href="ENJOY">分享</a></li>
                 <li style="background-color:#7fb700;"><a href="ERVICE">万小安</a></li>
-
-                <!--<li><a href="" style="background-color: #EA960F;color: #ffffff;">启封</a></li>-->
-                <!--<li><a href="" style="background-color: #1175B1;">发现</a></li>-->
-                <!--<li><a href="" style="background-color: #E07348;">怀古</a></li>-->
-                <!--<li><a href="" style="background-color: #EA960F;">买醉</a></li>-->
-                <!--<li><a href="EXPLORE" style="background-color: #E4CA04;">探秘</a></li>-->
-                <!--<li><a href="" style="background-color: #D31078;">聆听</a></li>-->
-                <!--<li><a href="" style="background-color: #E07348;">分享</a></li>-->
-                <!--<li><a href="" style="background-color: #7FB700;">万小安</a></li>-->
-
             </ul>
             <div class="cls"></div>
             <script type="text/javascript">
@@ -82,12 +71,12 @@
                         $( '<span class="over">' +  $(this).text() + '</span>' ).appendTo( this );
                     });
                     $("#nav_menu li a").hover(function() {
-                        $(".out",	this).stop().animate({'top':'50px'},200); // move down - hide
-                        $(".over",	this).stop().animate({'top':'0px'},200); // move down - show
+                        $(".out",	this).stop().animate({'top':'50px'},200);
+                        $(".over",	this).stop().animate({'top':'0px'},200);
 
                     }, function() {
-                        $(".out",	this).stop().animate({'top':'0px'},200); // move up - show
-                        $(".over",	this).stop().animate({'top':'-50px'},200); // move up - hide
+                        $(".out",	this).stop().animate({'top':'0px'},200);
+                        $(".over",	this).stop().animate({'top':'-50px'},200);
                     });
                 });
             </script>
@@ -107,6 +96,7 @@
     </div>
     <div class="clear"></div>
 </div>
+
 <!--- content_luxian begin --->
 <div id="content_luxian">
     <div class="title_img"><img src="images/i_03.jpg"></div>
@@ -134,7 +124,7 @@
                 </div>
                 <div class=ar id=RightArr13></div>
             </div>
-            <SCRIPT type=text/javascript src="http://www.lywas.cn/skin/js/kjlx.jquery.min.js"></SCRIPT>
+            <SCRIPT type=text/javascript src="javascripts/kjlx.jquery.min.js"></SCRIPT>
             <SCRIPT type=text/javascript src="javascripts/kjlx.js"></SCRIPT>
         </div>
     </div>
@@ -271,6 +261,7 @@
     <div class="title_img"><img src="images/i_11.jpg"></div>
     <div id="daren_imglist">
         <div class="left_img"><SCRIPT src="javascripts/rollpic.js" type="text/javascript"></SCRIPT>
+            <link rel="stylesheet" type="text/css" href="stylesheets/rollpic.css">
             <DIV class="p8rollpic"><UL class="slideshow"><LI style="WIDTH: 680px; HEIGHT: 385px"><A href="http://www.lywas.cn/bencandy.php?fid=56&aid=84" target="_blank"><IMG  src="http://www.lywas.cn/upload_files/photo/56/1_20160620160650_m1ezv.jpg" style="WIDTH: 680px; HEIGHT: 385px;"></A><SPAN class="title">石林怀古——不去驻足，不去深思，你都不知道这里有多少历史</SPAN></LI><LI style="WIDTH: 680px; HEIGHT: 385px"><A href="http://www.lywas.cn/bencandy.php?fid=58&aid=86" target="_blank"><IMG  src="http://www.lywas.cn/upload_files/photo/58/1_20160620170619_xinnb.jpg" style="WIDTH: 680px; HEIGHT: 385px;"></A><SPAN class="title">灵台仙踪 - 最美万安山</SPAN></LI><LI style="WIDTH: 680px; HEIGHT: 385px"><A href="http://www.lywas.cn/bencandy.php?fid=57&aid=85" target="_blank"><IMG  src="http://www.lywas.cn/upload_files/photo/57/1_20160620170605_lfd4u.jpg" style="WIDTH: 680px; HEIGHT: 385px;"></A><SPAN class="title">凭栏仰圣——追忆八宰相</SPAN></LI><LI style="WIDTH: 680px; HEIGHT: 385px"><A href="http://www.lywas.cn/bencandy.php?fid=61&aid=95" target="_blank"><IMG  src="http://www.lywas.cn/upload_files/photo/61/7_20160625090623_3okbp.png" style="WIDTH: 680px; HEIGHT: 385px;"></A><SPAN class="title">玉虚观象——相约888.8，人生不止苟且，还有诗和远方！</SPAN></LI><LI style="WIDTH: 680px; HEIGHT: 385px"><A href="http://www.lywas.cn/bencandy.php?fid=55&aid=91" target="_blank"><IMG  src="http://www.lywas.cn/upload_files/photo/55/1_20160621160655_nw2jb.jpg" style="WIDTH: 680px; HEIGHT: 385px;"></A><SPAN class="title">太虚化境</SPAN></LI></UL></DIV>
             <SCRIPT type="text/javascript">runslideshow();</SCRIPT></div>
         <div class="right_img">
@@ -367,7 +358,7 @@
             </div>
             <div class=ar id=RightArr15></div>
         </div>
-        <SCRIPT type=text/javascript src="http://www.lywas.cn/skin/js/gonggao.js"></SCRIPT>
+        <SCRIPT type=text/javascript src="javascripts/gonggao.js"></SCRIPT>
     </div>
     <div class="clear"></div>
 </div>
@@ -380,7 +371,7 @@
         <div class="left_img"><img src="images/i_21.jpg"></div>
         <div class="right_img">
             <div class="fenxiang"><img src="images/i_22.jpg"></div>
-            <div class="quanjing"><a href="http://www.inexphoto.net/was/was.html" target="_blank"><img src="http://www.lywas.cn/skin/img/i_23.jpg"></a></div>
+            <div class="quanjing"><a href="http://www.inexphoto.net/was/was.html" target="_blank"><img src="images/i_23.jpg"></a></div>
         </div>
     </div>
     <div class="clear"></div>
@@ -392,7 +383,7 @@
         <ul>
             <li><a href="http://www.lymuseum.com/" target="_blank"><img src="images/i_30.jpg"></a></li>
             <li><a href="http://www.lmsk.gov.cn" target="_blank"><img src="images/i_26.jpg"></a></li>
-            <li><a href="http://baike.baidu.com/link?url=tu_pNHUN8TLsaEeoEHI1qC8kuhOsqcd8XcHDjR0dXJwjo_vC1tLKLzp63wRq6hSV9azOryut_rBVtfQDbn7vCK" target="_blank"><img src="http://www.lywas.cn/skin/img/i_27.jpg"></a></li>
+            <li><a href="http://baike.baidu.com/link?url=tu_pNHUN8TLsaEeoEHI1qC8kuhOsqcd8XcHDjR0dXJwjo_vC1tLKLzp63wRq6hSV9azOryut_rBVtfQDbn7vCK" target="_blank"><img src="images/i_27.jpg"></a></li>
             <li><a href="http://www.chinabaimasi.org/" target="_blank"><img src="images/i_28.jpg"></a></li>
             <li><a href="http://www.guanlinmiao.cn/" target="_blank"><img src="images/i_29.jpg"></a></li>
         </ul>

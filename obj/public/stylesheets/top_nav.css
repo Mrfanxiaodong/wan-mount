@@ -1,0 +1,13 @@
+/*main css*/
+.izl-rmenu{position:fixed; left:50%; margin-left:532px; bottom:10px; padding-bottom:30px; background:url(..../top_nav_img/r_b.png) 0px bottom no-repeat; z-index:999; }
+.izl-rmenu .btn{width:72px; height:73px; margin-bottom:1px; cursor:pointer; position:relative;}
+.izl-rmenu .btn-tz{background:url(http://www.lywas.cn/skin/js/rightnav/top_nav_img/r_tz.png) 0 0 no-repeat; background-color:#9acb27;}
+.izl-rmenu .btn-tz:hover{background-color:#5a7e05;}
+.izl-rmenu .btn-dt{background:url(http://www.lywas.cn/skin/js/rightnav/top_nav_img/r_dt.png) 0 0 no-repeat; background-color:#9acb27;}
+.izl-rmenu .btn-dt:hover{background-color:#5a7e05;}
+.izl-rmenu .btn-phone{background:url(http://www.lywas.cn/skin/js/rightnav/top_nav_img/r_phone.png) 0 0 no-repeat; background-color:#9acb27;}
+.izl-rmenu .btn-phone:hover{background-color:#5a7e05;}
+.izl-rmenu .btn-phone .phone{background-color:#9acb27; position:absolute; width:160px; left:-160px; top:0; line-height:73px;text-align:center; display:none;}
+.izl-rmenu .btn-phone .phone a{color:#FFF; font-size:18px; font-weight:bold;}
+.izl-rmenu .btn-top{background:url(http://www.lywas.cn/skin/js/rightnav/top_nav_img/r_top.png) 0px 0px no-repeat; background-color:#333; display:none;}
+.izl-rmenu .btn-top:hover{background-color:#000;}

@@ -1,0 +1,244 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-size: 12px;
+    line-height: 24px;
+    padding: 0;
+    font-family: "宋体",serif; !important;
+}
+div{
+    display: block;
+}
+.top{
+    width: 100%;
+}
+.top_box{
+    width: 1080px;
+    height: 100px;
+    margin: 0 auto;
+    position: relative;
+}
+.left_title{
+    margin-top: 14px;
+    float: left;
+}
+.right_call{
+    float: right;
+    margin-top: 16px;
+}
+.banner_box{
+    width: 100%;
+    height: 544px;
+    position: relative;
+}
+.banner_box .yuyue{
+    width: 285px;
+    height: 56px;
+    position: absolute;
+    left: 63%;
+    top: 400px;
+    background: url(../images/yuyue.png);
+}
+.header_top_bg{
+    width: 100%;
+    height: 20px;
+    background: url(../images/i_011_02.jpg);
+}
+.clear{
+    clear: both;
+    font-size: 0;
+    line-height: 0;
+}
+.js-silder{
+    position: relative;
+    min-width: 320px;
+}
+.silder-scroll{
+    width: 100%;
+    overflow: hidden;
+}
+.silder-main{
+    width: 100%;
+    position: relative;
+    padding: 0;
+    height: 524px;
+    overflow: hidden;
+}
+.silder-main-img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+.silder-main-img img{
+    width: 100%;
+    height: 524px;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.js-silder-ctrl{
+    width: 100%;
+    text-align: center;
+}
+.silder-ctrl-prev,
+.silder-ctrl-next{
+    position: absolute;
+    top: 0;
+    width: 8%;
+    height: 495px;
+    vertical-align: middle;
+    cursor: pointer;
+    color: #fff;
+    font-family: "宋体",serif;;
+    font-size: 52px;
+    font-weight: 600;
+    text-shadow: #666 2px 2px 5px;
+}
+.silder-ctrl-prev{
+    left: 0;
+    text-align: left;
+}
+.silder-ctrl-next{
+    right: 0;
+    text-align: right;
+}
+.silder-ctrl-prev>span,
+.silder-ctrl-next>span{
+    position: absolute;
+    top: 50%;
+    margin-top: -40px;
+}
+.silder-ctrl-prev>span{
+    left: 0;
+}
+.silder-ctrl-next>span{
+    right: 0;
+}
+.silder-ctrl-con{
+    display: inline-block;
+    width: 10%;
+    padding: 9px 0;
+    margin: 0 10px;
+    position: relative;
+    bottom: 90px;
+    cursor: pointer;
+}
+.silder-ctrl-con>span{
+    display: block;
+    line-height: 0;
+    text-indent: -9999px;
+    overflow: hidden;
+    padding: 4px 0;
+    cursor: pointer;
+    background-color: #fff;
+}
+.silder-ctrl-con.active>span{
+    background-color: #e1472f;
+}
+.content_luxian{
+    height: 480px;
+    background-color: #f8f8f8;
+}
+.title_img{
+    width: 573px;
+    height: 71px;
+    margin: 0 auto;
+    padding-top: 35px;
+}
+.title_txt{
+    width: 720px;
+    height: 50px;
+    margin: 0 auto;
+    padding-top: 15px;
+    font-size: 14px;
+    color: #4c4c4c;
+    text-align: center;
+}
+.nav_luxian{
+    width: 1163px;
+    height: 255px;
+    margin: 0 auto;
+    padding-top: 10px;
+}
+.box_luxian{
+    width: 1050px;
+    height: 230px;
+    margin: 20px auto;
+    position: relative;
+}
+.a1{
+    left: 20px;
+    top: 60px;
+    position: absolute;
+    OVERFLOW: hidden;
+    WIDTH: 32px;
+    CURSOR: pointer;
+    LINE-HEIGHT: 200px;
+    HEIGHT: 34px;
+    background: url("../images/kjlx_btn02.gif")no-repeat 0 0;
+}
+.a2{
+    background: url("../images/kjlx_btn01.gif")no-repeat 0 0;
+    right: 20px;
+    top: 60px;
+    position: absolute;
+    overflow: hidden;
+    width: 32px;
+    cursor: pointer;
+    line-height: 200px;
+    height: 34px;
+}
+.ashow{
+    width: 955px;
+    margin-left: 95px;
+    float: left;
+    display: inline;
+}
+.nav_list{
+    width: 860px;
+    overflow: hidden;
+}
+.nav_list li{
+    FLOAT: left;
+    OVERFLOW: hidden;
+    WIDTH: 215px;
+    HEIGHT: 230px;
+    TEXT-ALIGN: center;
+}
+.video_list{
+    PADDING-RIGHT: 0;
+    DISPLAY: block;
+    PADDING-LEFT: 0;
+    BACKGROUND: url(../images/kjlx_bg.png) no-repeat;
+    PADDING-BOTTOM: 0;
+    WIDTH: 144px;
+    PADDING-TOP: 5px;
+    margin: 0 auto;
+    HEIGHT: 144px;
+}
+.p{
+    padding-right: 0;
+    padding-left: 0;
+    background: none transparent scroll repeat 0 0;
+    padding-bottom: 0;
+    padding-top:10px;
+    color: #828282;
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 20px;
+}
+.p a{
+    font-size: 20px;
+    font-weight: bold;
+    LINE-HEIGHT: 20px;
+}
+
+.clear{
+    clear: both;
+    font-size: 0;
+    line-height: 0;
+}
+

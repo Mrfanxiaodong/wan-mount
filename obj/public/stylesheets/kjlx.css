@@ -1,0 +1,86 @@
+.box_luxian {
+    width:1050px;
+    height:230px;
+    margin:20px auto;
+    position:relative;
+}
+.ashow2 {
+    width:955px;/***此处值为总宽减去左浮动、避免双击变成蓝色背景***/
+    margin-left:95px;
+    float:left;
+    display:inline;
+}
+.list_02 LI {
+    FLOAT: left;
+    OVERFLOW: hidden;
+    WIDTH: 215px;
+    HEIGHT: 230px;
+    TEXT-ALIGN: center
+}
+.list_02 LI A.video_list {
+    PADDING-RIGHT: 0;
+    DISPLAY: block;
+    PADDING-LEFT: 0;
+    BACKGROUND: url(../images/kjlx_bg.png) no-repeat;
+    PADDING-BOTTOM: 0;
+    WIDTH: 144px;
+    PADDING-TOP: 5px;
+    margin:0 auto;
+    HEIGHT: 144px
+}
+.list_02 LI A.video_list:hover {
+    BACKGROUND-POSITION: -144px 0;
+}
+.list_02 LI A img {
+    width:132px;
+    height:132px;
+    border-radius:50%;
+    overflow:hidden;
+}
+.list_02 LI P A {
+    font-size:20px;
+    font-weight:bold;
+    LINE-HEIGHT: 20px;
+}
+
+.list_02 LI P.p {
+    PADDING-RIGHT: 0;
+    PADDING-LEFT: 0;
+    BACKGROUND: none transparent scroll repeat 0 0;
+    PADDING-BOTTOM: 0;
+    PADDING-TOP: 10px;
+    color:#828282;
+    font-size:12px;
+    font-weight:bold;
+    LINE-HEIGHT: 20px;
+}
+.c_s_02 {
+    MARGIN-TOP: 5px;
+    ZOOM: 1;
+    TEXT-ALIGN: center
+}
+.c_s_02 P {
+    HEIGHT: 22px
+}
+.al {
+    BACKGROUND: url(../images/kjlx_btn02.gif) no-repeat 0 0;
+    left:20px;
+    top:60px;
+    position:absolute;
+    OVERFLOW: hidden;
+    WIDTH: 32px;
+    CURSOR: pointer;
+    LINE-HEIGHT: 200px;
+    HEIGHT: 34px
+}
+.ar {
+    BACKGROUND: url(../images/kjlx_btn01.gif) no-repeat 0 0;
+    right:20px;
+    top:60px;
+    position:absolute;
+    OVERFLOW: hidden;
+    WIDTH: 32px;
+    CURSOR: pointer;
+    LINE-HEIGHT: 200px;
+    HEIGHT: 34px
+}

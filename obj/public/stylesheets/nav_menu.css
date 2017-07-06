@@ -1,0 +1,10 @@
+.menu{height:50px;display:block;padding:0;width:1080px;margin:0 auto;}
+.menu ul{list-style:none;padding:0;margin:0;}
+.menu ul li{float:left;overflow:hidden;position:relative;line-height:50px;text-align:center;}
+.menu ul li a{position:relative;display:block;width:135px;height:50px;font-size:18px;font-weight:bold;text-decoration:none;cursor:pointer;font-weight:bold;line-height:50px;}
+.menu ul li a span{position:absolute;left:0;width:135px;}
+.menu ul li a span.out{top:0;}
+.menu ul li a span.over,  .menu ul li a span.bg{top:-50px;}
+#nav_menu{background-image:url(../images/s_03.jpg);background-repeat:repeat;}
+#nav_menu ul li a{color:#FFFFFF;}
+#nav_menu ul li a span.over{color:#87514f;height:50px;width:135px;background-image:url(../images/w_03.jpg);background-repeat:repeat;}

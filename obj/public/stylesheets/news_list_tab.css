@@ -1,0 +1,6 @@
+.tab1{width:300px;}
+.meiwenmenu{width:300px;height:37px;font-size:12px;font-weight:bold;}
+.meiwenmenu li{float:left;width:70px;height:28px;line-height:28px;text-align:center;cursor:pointer;color:#fff;overflow:hidden;background:#a69480;margin-right:4px;}
+.meiwenmenu li.off{background:#e2b14b;color:#fff;font-weight:bold;border-bottom:none;}
+.menudiv{width:293px;height:186px;border-top:0;background:#cccccc;}
+.menudiv div{line-height:28px;}

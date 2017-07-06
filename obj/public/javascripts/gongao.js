@@ -1,0 +1,14 @@
+var scrollPic_15 = new ScrollPic();
+				scrollPic_15.scrollContId   = "ISL_Cont_15"; 
+				scrollPic_15.arrLeftId      = "LeftArr15";
+				scrollPic_15.arrRightId     = "RightArr15"; 
+				scrollPic_15.frameWidth     = 969;
+				scrollPic_15.pageWidth      = 326; 
+				scrollPic_15.upright        = false; 
+				scrollPic_15.listEvent      = "onclick"; 
+				scrollPic_15.speed          = 10; 
+				scrollPic_15.space          = 10; 
+				scrollPic_15.autoPlay       = true; 
+				scrollPic_15.autoPlayTime   = 3; 
+				scrollPic_15.circularly		= true; 
+				scrollPic_15.initialize(); 

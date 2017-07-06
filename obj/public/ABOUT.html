@@ -250,5 +250,44 @@
         });
     });
 </script>
+<script src="javascripts/jquery-1.9.1.min.js"></script>
+<script src="javascripts/jquery.bxslider.js"></script>
+<script>
+
+    $(document).ready(function(){
+
+        $('.slider3').bxSlider({
+            displaySlideQty:4,
+            slideWidth: 210,
+            minSlides: 1,
+            maxSlides: 4,
+            moveSlides: 1,
+            auto: true
+        });
+    });
+    $('.center1').mouseover(function(){
+        $(this).css("background-color",'#7da914');
+        $(this).css("background-image",'none');
+    }).mouseout(function(){
+        $(this).css("background-color",'none');
+        $(this).css("background-image",'url(http://www.lywas.cn/skin/img/tm_01_bg.jpg)');
+    })
+    $('.center2').mouseover(function(){
+        $(this).css("background-color",'#7da914');
+        $(this).css("background-image",'none');
+    }).mouseout(function(){
+        $(this).css("background-color",'none');
+        $(this).css("background-image",'url(http://www.lywas.cn/skin/img/tm_02_bg.jpg)');
+    })
+    $('.center3').mouseover(function(){
+        $(this).css("background-color",'#7da914');
+        $(this).css("background-image",'none');
+    }).mouseout(function(){
+        $(this).css("background-color",'none');
+        $(this).css("background-image",'url(http://www.lywas.cn/skin/img/tm_03_bg.jpg)');
+    })
+
+
+</script>
 </body>
 </html>

@@ -7,6 +7,8 @@ var bodyParser = require('body-parser');
 
 var index = require('./routes/index');
 var users = require('./routes/users');
+var wanmount = require('./routes/wanmount');
+var wanmountt = require('./routes/wanmountt');
 
 var app = express();
 
@@ -24,6 +26,8 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', index);
 app.use('/users', users);
+app.use('/w', wanmount);
+app.use('/wt', wanmountt);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

@@ -1,4 +1,4 @@
-<div>
+<div  ng-app = 'myApp' ng-controller='myctrl'>
     <div class="fountc">
         <div class="contain">
             <img src="images/i_47 (1).jpg" alt="">
@@ -8,63 +8,24 @@
         <div class="header">
             <p>历史名人</p>
         </div>
-        <div class="tuli">
-            <div class="top">
-                <div>
-                    <div>
-                        <p></p>
-                        <p>武则天</p>
-                        <p>公元624年~公元705年</p>
-                    </div>
-                </div>
-                <div>
-                    <div>
-                        <p></p>
-                        <p>武则天</p>
-                        <p>公元624年~公元705年</p>
-                    </div>
-                </div>
-                <div>
-                    <div>
-                        <p></p>
-                        <p>武则天</p>
-                        <p>公元624年~公元705年</p>
-                    </div>
-                </div>
-                <div>
-                    <div>
-                        <p></p>
-                        <p>武则天</p>
-                        <p>公元624年~公元705年</p>
-                    </div>
-                </div>
-                <div>
-                    <div>
-                        <p></p>
-                        <p>武则天</p>
-                        <p>公元624年~公元705年</p>
-                    </div>
+        <div class="tuli" >
+            <div class="top" style="text-align: center">
+                <div ng-repeat="shu in t">
+                    <img ng-src="\{{shu.imgurl}}" alt="" class="iimg">
+                    <p>\{{shu.name}}</p>
+                    <p>\{{shu.histime}}</p>
                 </div>
             </div>
             <div class="bottom">
                 <div class="left">
-                    <div>
-                        <div>
-                            <p></p>
-                            <p>武则天</p>
-                            <p>公元624年~公元705年</p>
-                        </div>
-                    </div>
-                    <div>
-                        <div>
-                            <p></p>
-                            <p>武则天</p>
-                            <p>公元624年~公元705年</p>
-                        </div>
+                    <div ng-repeat="sh in tt" style="text-align: center">
+                        <img ng-src="\{{sh.imgurl}}" alt="" class="iimg">
+                        <p>\{{sh.name}}</p>
+                        <p>\{{sh.histime}}</p>
                     </div>
                 </div>
                 <div class="right">
-                    万安山又名玉泉山或大石山，在洛阳东南侧，位于洛阳、偃师、伊川三县交界处。与中岳嵩山遥遥相对，沟壑深险，巍峨壮观，为洛阳东南之要冲。魏文帝尝猎于此山时有虎超乘舆，孙礼曾拔剑刺之。今山坳有魏明帝的高平陵。 万安山每于冬天雪晴之后，平地及其它山上的雪已化净，而石林山顶还是一片白皑皑的积雪，映着阳光，分外夺目，为旧时洛阳八小景之一，名“石林雪霁(指雨雪后转晴)”。山南麓伊川县吕店镇铁李沟村一带盛产长寿石“麦饭石”，故村子被誉为长寿村。万安山每年农历三月三、六月十二、十月十五有庙会。
+                   <p>\{{zi[0].zi}}</p>
                 </div>
             </div>
         </div>
@@ -83,198 +44,49 @@
             <img src="images/i_61 (1).jpg" alt="">
         </div>
         <div class="right">
-            <ul>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
+            <ul >
+               <li ng-repeat="z in zili">\{{z.zzz}}</li>
             </ul>
         </div>
     </div>
 </div>
-<style>
-    *{
-        margin:0;
-        padding:0;
-    }
-    .fountc{
-        width: 100%;
-        height: 150px;
-        padding-top: 30px;
-        box-sizing: border-box;
-        background-color: #f8f8f8;
-    }
-    .fountc .contain{
-        height: 100%;
-        width: 1080px;
-        margin: 0 auto;
-    }
-    .fountc .contain img{
-        height: 90px;
-    }
-    .con{
-        width: 100%;
-        height: 530px;
-    }
-    .con .header{
-        width: 1080px;
-        height: 50px;
-        margin: 0 auto;
+<link rel="stylesheet" href="stylesheets/MEMORY.css">
+<script src="javascripts/angular.min.js"></script>
+<script>
+    var app = angular.module('myApp',[])
+    app.controller('myctrl',function($scope,$http){
+        $http({
+            url:'/w/',
+        }).then(function(res){
+                    $scope.t=res.data.data;
+                },
+                function(err){}
+        )
+        $http({
+            url:'/w/',
+            method:"POST",
+        }).then(function(res){
+                    $scope.tt=res.data.data;
+                },
+                function(err){}
+        )
 
-        padding-top: 14px;
-        box-sizing: border-box;
-    }
-    .con .header p{
-        width: 125px;
-        height: 36px;
-        background: #e07347;
-        color: #FFFFFF;
-        font-weight: bold;
-        font-size: 18px;
-        line-height: 36px;
-        text-align: center;
+        $http({
+            url:'/wt/',
+        }).then(function(res){
+                    $scope.zi=res.data.data;
+                },
+                function(err){}
+        )
+        $http({
+            url:'/wt/',
+            method:"POST",
+        }).then(function(res){
+                    $scope.zili=res.data.data;
+                    console.log($scope.zili);
+                },
+                function(err){}
+        )
+    })
+</script>
 
-    }
-    .tuli{
-        width: 1080px;
-        height: 480px;
-
-        margin: 0 auto;
-    }
-    .tuli .top{
-        width: 100%;
-        height: 220px;
-        padding-top: 20px;
-        box-sizing: border-box;
-        /*overflow: hidden;*/
-    }
-    .tuli .top div{
-        width: 216px;
-        height: 220px;
-        float: left;
-    }
-    .tuli .top div div{
-        width: 152px;
-        height: 100%;
-        margin-left: 30px;
-    }
-    .tuli .top div div p:nth-child(1){
-        width: 152px;
-        height: 152px;
-        box-sizing: border-box;
-        border-radius: 50%;
-        border: 10px solid #a8a8a8;
-        text-align: center;
-    }
-    .tuli .top div div p{
-        width: 100%;
-        height: 25px;
-        line-height: 25px;
-        text-align: center;
-    }
-    .tuli .bottom{
-        width: 100%;
-        height: 260px;
-
-    }
-    .tuli .bottom .left{
-        width: 432px;
-        height: 240px;
-
-    }
-    .tuli .bottom .right{
-        width: 648px;
-        height: 240px;
-        background: url("images/i_57.jpg") no-repeat;
-    }
-    .tuli .bottom .left div{
-        width: 216px;
-        height: 240px;
-
-        float: left;
-    }
-    .tuli .bottom .left div div{
-        width: 152px;
-        height: 100%;
-        margin-left: 30px;
-        box-sizing: border-box;
-        padding-top: 17px;
-    }
-    .tuli .bottom .left div div p:nth-child(1){
-        width: 152px;
-        height: 152px;
-        box-sizing: border-box;
-        border-radius: 50%;
-        border: 10px solid #a8a8a8;
-        text-align: center;
-    }
-    .tuli .bottom .left div div p{
-        width: 100%;
-        height: 25px;
-        line-height: 25px;
-        text-align: center;
-    }
-    .tuli .bottom .right{
-        text-indent: 2em;
-        font-size: 16px;
-        color: #505050;
-        line-height: 30px;
-        padding-top: 10px;
-        box-sizing: border-box;
-    }
-    .img{
-        width: 1000px;
-        height: 100px;
-        margin: 0 auto;
-        padding-top: 20px;
-        box-sizing: border-box;
-    }
-    .qitu{
-        width: 100%;
-        height: 348px;
-        background-color: #f6f6f6;
-        padding-top: 30px;
-        box-sizing: border-box;
-    }
-    .qitu .con{
-        width: 1000px;
-        height: 266px;
-        margin: 0 auto;
-    }
-    .footer{
-        width: 1000px;
-        height: 280px;
-        padding-top: 20px;
-        box-sizing: border-box;
-        margin: 0 auto;
-    }
-    .footer .left{
-        width: 250px;
-        height: 100%;
-        float: left;
-    }
-    .footer .left img:nth-child(2){
-        margin-left: 50px;
-    }
-    .footer .right, .footer .right ul{
-        width: 750px;
-        height: 100%;
-        float: left;
-    }
-    .footer .right ul li{
-        width: 200px;
-        height: 35px;
-        background-color: #f6f6f6;
-        margin-top: 20px;
-        float: left;
-        margin-left: 30px;
-    }
-</style>

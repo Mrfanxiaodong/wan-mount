@@ -11,7 +11,7 @@
         <div class="tuli" >
             <div class="top" style="text-align: center">
                 <div ng-repeat="shu in t">
-                    <img ng-src="\{{shu.imgurl}}" alt="" class="iimg">
+                    <a href="\{{shu.linkf}}"> <img ng-src="\{{shu.imgurl}}" alt="" class="iimg"></a>
                     <p>\{{shu.name}}</p>
                     <p>\{{shu.histime}}</p>
                 </div>
@@ -19,7 +19,7 @@
             <div class="bottom">
                 <div class="left">
                     <div ng-repeat="sh in tt" style="text-align: center">
-                        <img ng-src="\{{sh.imgurl}}" alt="" class="iimg">
+                        <a href="\{{sh.linkf}}"> <img ng-src="\{{sh.imgurl}}" alt="" class="iimg"></a>
                         <p>\{{sh.name}}</p>
                         <p>\{{sh.histime}}</p>
                     </div>
@@ -45,7 +45,7 @@
         </div>
         <div class="right">
             <ul >
-               <li ng-repeat="z in zili">\{{z.zzz}}</li>
+                <li ng-repeat="z in zili"><a href="\{{z.linkf}}">\{{z.zzz}}</a></li>
             </ul>
         </div>
     </div>

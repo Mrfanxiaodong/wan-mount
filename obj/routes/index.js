@@ -23,5 +23,9 @@ redirecty('/EXPLORE','EXPLORE');
 redirecty('/LISTEN','LISTEN');
 redirecty('/ENJOY','ENJOY');
 redirecty('/ERVICE','ERVICE');
+redirecty('/QZYL','QZYL');
+redirecty('/LYWS','LYWS');
+redirecty('/KJGX','KJGX');
+redirecty('/QJZR','QJZR');
 
 module.exports = router;

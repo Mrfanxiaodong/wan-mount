@@ -27,11 +27,9 @@ redirecty('/QZYL','QZYL');
 redirecty('/LYWS','LYWS');
 redirecty('/KJGX','KJGX');
 redirecty('/QJZR','QJZR');
-<<<<<<< HEAD
-=======
 redirecty('/xiuxian','xiuxian');
 redirecty('/wenhua','wenhua');
 redirecty('/renwen','renwen');
->>>>>>> origin/master
+
 
 module.exports = router;
